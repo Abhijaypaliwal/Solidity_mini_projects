@@ -1,0 +1,171 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_routineNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "CompleteDeliveryToWarehouse",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_routineNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "CompleteMfg",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_routineNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "CompleteRawMaterialProd",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_routineNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "CompleteSupply",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "mappingRoutine",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "routineNo",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "routineDateCreation",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rawMaterialProdDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "deliveryToWarehouseDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "mfgDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "supplyDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum enums.progress",
+						"name": "routineProgress",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "routineNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "setRoutine",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"enumpractice.sol": "enums"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"enumpractice.sol": {
+			"keccak256": "0xe7ad5bc91d5c132a4fed13229917e19b1dcff13125177ce86105d26a9645930e",
+			"urls": [
+				"bzz-raw://3cdb71b7b9964eba735ec4472a78d5c6a00e30d1466cfef2400af8742cf24632",
+				"dweb:/ipfs/QmQH5Adc1Cztd7uES7dBN2FUFZk2J7NvPHGxguuXoqXTed"
+			]
+		}
+	},
+	"version": 1
+}

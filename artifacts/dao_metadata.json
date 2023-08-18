@@ -1,0 +1,274 @@
+{
+	"compiler": {
+		"version": "0.8.20+commit.a1b79de6"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_votes",
+						"type": "uint256"
+					}
+				],
+				"name": "SetAgainstProposal",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_votes",
+						"type": "uint256"
+					}
+				],
+				"name": "SetFavourProposal",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_proposalInfo",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_expiry",
+						"type": "uint256"
+					}
+				],
+				"name": "SetProposal",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "OTHER_CONTRACT",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "claimTokens",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "proposalCountMapping",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "proposalInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "proposalInitiator",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "proposalVotesTotal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "proposalVotesAgainst",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "proposalVotesFavour",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expiry",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "proposalNumber",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_votes",
+						"type": "uint256"
+					}
+				],
+				"name": "setAgainstProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_proposalNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_votes",
+						"type": "uint256"
+					}
+				],
+				"name": "setFavourProposal",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_proposalInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expiry",
+						"type": "uint256"
+					}
+				],
+				"name": "setProposal",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "tokenVotes",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"dao.sol": "dao"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"dao.sol": {
+			"keccak256": "0x32002f736b910fca20a18b5d99f8c599b3f0c8543d667116ca899543c5552321",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b2c1c0d2821ef07649a209a2d19b8ed682448187bce721c4dc7d13d44ed1654d",
+				"dweb:/ipfs/QmWxUDQr6vPrSVnbAey2bHvs8xsuG8RYkBrzXHTemtWiVX"
+			]
+		}
+	},
+	"version": 1
+}

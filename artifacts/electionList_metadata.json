@@ -1,0 +1,62 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [],
+				"name": "makeEligible",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "voteNum",
+						"type": "uint256"
+					}
+				],
+				"name": "vote",
+				"outputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"election.sol": "electionList"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"election.sol": {
+			"keccak256": "0x6b6c968afa3223d8bde82771b262ebf29f562984fed453cb562774238a12c10d",
+			"urls": [
+				"bzz-raw://44b900d6a94e11c5b739a187d28cfa8bf482260bd130a3b4be80354222ade843",
+				"dweb:/ipfs/QmXuUytSLhxMiwBestQQGZu4kygr28LJU4UaJxNt6eVhvg"
+			]
+		}
+	},
+	"version": 1
+}
