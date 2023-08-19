@@ -41,6 +41,14 @@ contract fractionalNFT {
     nftDetails details;
     address public tokenAddr = 0x6b10DE261d222be77a9FD7C9fBdcD46cF7b387A8;
 
+     /**
+     * @notice Set an NFT for fractional ownership.
+     * @param _nftContract Address of the NFT contract.
+     * @param _tokenID ID of the NFT token.
+     * @param _totalsupply Total supply of fractional tokens.
+     * @return True if the setup is successful.
+     */
+
     function setNftForFraction(address _nftContract, uint _tokenID, uint _totalsupply) public returns (bool) {
         IERC721 NFTinstance = IERC721(_nftContract);
         NFTinstance.transferFrom(msg.sender, address(this), _tokenID);
@@ -54,6 +62,10 @@ contract fractionalNFT {
         return true;
 
     }
+/**
+     * @notice Buy fractional ownership of the NFT.
+     * @return True if the purchase is successful.
+     */
 
     function BuyFractionNFT() public payable returns (bool) {
        // uint _valOfNFT = msg.value;
@@ -65,6 +77,11 @@ contract fractionalNFT {
         return true;
 
     }
+
+ /**
+     * @notice Withdraw fractional ownership and the associated NFT.
+     * @return True if the withdrawal is successful.
+     */
 
     function withdrawNFT() public returns (bool) {
         require(details.canTransfer == true, "could not withdraw now");
